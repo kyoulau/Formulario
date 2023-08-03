@@ -1,0 +1,82 @@
+<!DOCTYPE html>
+<html lang="pt-br">
+<head>
+    <meta charset="UTF-8">
+    <meta name="viewport" content="width=device-width, initial-scale=1.0">
+    <title>Formulário para empréstimo de livros</title>
+    <link rel="stylesheet" href="style.css">
+    <link rel="preconnect" href="https://fonts.googleapis.com">
+    <link rel="preconnect" href="https://fonts.gstatic.com" crossorigin>
+    <link href="https://fonts.googleapis.com/css2?family=Poppins:ital,wght@0,300;0,400;0,500;0,600;1,600&display=swap" rel="stylesheet">
+</head>
+<body>
+    <main>
+        <h1 class="title">Formulário para empréstimo de livros.</h1>
+        <h4 class="subtituto" > Livros disponíveis:</h4>
+        <!-- futuramente colocar divisão de livros por genero -->
+        <div class="livros">
+            <ul>
+                <li> <img  class="image" src="/sources/a-moreninha.jpg" alt="a-moreninha"> <p>A moreninha</p></li>
+                <li> <img  class="image" src="/sources/crime-castigo.jpg" alt="crime-castigo"><p>Crime e castigo</p> </li>
+                <li> <img  class="image" src="/sources/o-alieneista.jpg" alt="o-alieneista"> <p>O alienista</p></li>
+                <li> <img  class="image" src="/sources/o-alquimista.jpg" alt="o-alquimista"> <p> O alquimista</p></li>
+                <li> <img  class="image" src="/sources/o-pequeno-pricnipe.jpg" alt="o-pequeno-pricnipe"> <p>O pequeno principe </p></li>
+            </ul>
+        </div>
+
+        <form name="formLivros" id="formLivros" method="get" enctype="text/plain" action="">
+            <!-- nome,
+                sexo,
+                email,
+                senha,
+                 data de nascimento,
+                 numero,  
+                 seleção de profissão,
+                  livro desejado -->
+
+            <fieldset class="grupo">
+                <div class="campo">
+                  <label for="username">Name:</label>
+                  <input id="username" type="text" name="username"><br>
+                  <label for="sexo">Sexo:</label>
+                  <input type="radio" name="sexo" id="sexo" value="masculino">masculino
+                  <input type="radio" name="sexo" id="sexo" value="feminino">feminino<br>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo">
+                <div class="campo">
+                  <label for="email">Email: </label>
+                  <input id="email" type="text" name="email"><br>
+                  <label for="senha">Senha</label>
+                  <input id="senha" type="password" name="senha"><br>
+                  <label for="data-nascimento">Nascimento:</label>
+                  <input type="date" name="data-nascimento" id="data-nascimento"><br>
+                  <label for="telefone">Telefone:</label>
+                  <input type="tel" name="telefone" id="telefone"><br>
+                  <label for="profissao">Profissão</label>
+                  <input type="text" name="profissao" id="profissao"><br>
+                </div>
+            </fieldset>
+
+            <fieldset class="grupo" >
+                <div class="campo" >
+                    <div class="campo">
+                        <label for="livro-desejado"><strong>Livro desejado</strong></label>
+                        <select id="livro-desejado" required>
+                          <option selected disabled value="">Selecione</option>
+                          <option>A moreninha</option>
+                          <option>Crime e castigo</option>
+                          <option>O alienista</option>
+                          <option> O alquimista</option>
+                          <option>O pequeno principe</option>
+                        </select>
+                    </div>
+                  <input type="submit" name="cmdSend" id="cmdSend" value="Enviar"/>
+                </div>
+            </fieldset>
+
+        </form>
+    </main>
+</body>
+</html>
