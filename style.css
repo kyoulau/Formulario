@@ -9,7 +9,7 @@ html {
   }
 
 body{
-    background-color: darksalmon;
+    background-color: rgb(132, 155, 90); 
 }
 
 fieldset {
@@ -21,6 +21,7 @@ fieldset {
 }
 
 .subtituto{
+    margin-left: 5%;
     padding-bottom: 10px;
 }
 
@@ -28,6 +29,7 @@ fieldset {
     width: 210px;
     display: flex;
     padding-left: 20px;
+    padding-top: 10px;
     padding-right: 20px;
     flex-direction: column;
     transition: transform 0.3s ease-in-out;
@@ -51,4 +53,35 @@ p{
 
 form{
     justify-content: center;
+}
+
+.campo label {
+    margin-bottom: 0.2em;
+    color: #e4ffc1;
+    display: block;
+}
+
+.campo input {
+    border-radius: 30px;
+    font-size: 1em;
+    padding: 0.5;
+}
+ 
+.grupo{
+    margin-left: 36%;    
+}
+
+button{
+    width: 7rem;
+    font-size: 1em;
+    height: 30px;
+    margin-top: 3%;
+    border-radius: 5px;
+    margin-bottom:2% ;
+}
+
+.campo select {
+    padding-right: 1em;
+    font-size: 1em;
+    border-radius: 20px;
 }
